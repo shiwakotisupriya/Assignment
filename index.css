@@ -1,0 +1,13 @@
+body{
+	background-image: url("white.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	    font-size: 20px;
+	    word-spacing: 3px;
+		
+}
+p{
+	color: #f20738;
+	font-size: 50px;
+}
