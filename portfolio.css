@@ -1,0 +1,44 @@
+body{
+	background-image: url("hi.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	font-size: 20px;
+	word-spacing: 3px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+	background-color: #8e6b85;
+	padding: 10px;
+	margin: 100px;
+}
+.grid-container > div{
+	background-color: #ad93a6;
+	text-align: center;
+	padding: 10px;
+	font-size: 25px;
+	
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+h1{
+	text-align: center;
+	color: red;
+	text-shadow:0 0 15px green,0 0 20px forestgreen;
+	transform: skew(25deg,20deg);
+}
+h2{
+    text-align: left;
+	color: blueviolet;
+	text-shadow:0 0 40px blue;
+	transform: skewX(40deg);	
+}
+@media screen and (max-width: 300px){
+	body{
+		background-color: pink;
+	}
+}
