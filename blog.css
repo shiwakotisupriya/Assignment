@@ -1,0 +1,30 @@
+body{
+	background-color: grey;
+	font-size: 35px;
+	word-spacing: 6px;
+}
+header{
+	text-align: center;
+	font-size: 60px;
+	color: white;
+}
+#grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-shadow:0 0 5px black;
+	transform: skew(5deg,5deg);
+}
+
+#grid-container > div{
+	background-color: lightgray;
+	padding: 100px;
+	margin: 25px;
+}
+#item3 {
+	grid-column: 1/span 2;
+}
+@media screen and (max-width: 300px){
+	body{
+		background-color: green;
+	}
+}
