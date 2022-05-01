@@ -5,9 +5,22 @@ body{
 }
 form{
 	background-color: #4f7942;
-	font-size: 40px;
-	margin: 80px;
-	padding: 40px;
+	font-size: 30px;
+	margin: 60px;
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	animation-name: asignment;
+	animation-duration: 10s;
+	animation-iteration-count: 2;
+}
+@keyframes asignment {
+	0% {background-color: #4f7942; left: 0px; top: 0px;}
+	25% {background-color: purple; left: 200px; top: 0px; }
+	50% {background-color: red; left: 300px; top:100px }
+	75% { background: blue; left: 0px; top: 100px; }
+	100% {background-color: orange; left: 0px; top: 0px;}
 }
 @media screen and (max-width: 300px){
 	body{
