@@ -18,7 +18,7 @@ header{
 #grid-container > div{
 	background-color: lightgray;
 	padding: 100px;
-	margin: 25px;
+	margin: 30px;
 }
 #item3 {
 	grid-column: 1/span 2;
