@@ -9,26 +9,17 @@ body{
 #grid-container {
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-gap: 15px;
-	background-color: #8e6b85;
-	padding: 15px;
-	margin: 150px;
+	grid-gap: 10px;
+	background-color: #544c4a;
+	padding: 10px;
+	margin: 80px;
 	
 	position: relative;
-	animation-name: asignment;
-	animation-duration: 10s;
 }
-@keyframes asignment {
-	0% {background-color: #8e6b85; left: 0px; top: 0px;}
-	25% {background-color: purple; left: 100px; top: 0px; }
-	50% {background-color: black; left: 100px; top:100px }
-	75% { background: blue; left: 0px; top: 100px; }
-	100% {background-color: grey; left: 0px; top: 0px;}
-} 
 #grid-container > div{
-	background-color: #ad93a6;
+	background-color: #d9dddc;
 	text-align: center;
-	padding: 8px;
+	padding: 80px;
 	font-size: 25px;
 	
 }
