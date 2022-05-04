@@ -1,5 +1,5 @@
 body{
-	background-color: #4cbb17;
+	background-color: #bdb7ab;
 	font-size: 40px;
 	word-spacing: 6px;
 }
@@ -16,11 +16,11 @@ form{
 	animation-iteration-count: 2;
 }
 @keyframes asignment {
-	0% {background-color: #4f7942; left: 0px; top: 0px;}
-	25% {background-color: purple; left: 200px; top: 0px; }
-	50% {background-color: red; left: 300px; top:100px }
-	75% { background: blue; left: 0px; top: 100px; }
-	100% {background-color: orange; left: 0px; top: 0px;}
+	0% {background-color: #d6cfc7; left: 0px; top: 0px;}
+	25% {background-color: #363636; left: 200px; top: 0px; }
+	50% {background-color: #828282; left: 300px; top:100px }
+	75% { background: #877f7d; left: 0px; top: 100px; }
+	100% {background-color: #d9dddc; left: 0px; top: 0px;}
 }
 @media screen and (max-width: 300px){
 	body{
