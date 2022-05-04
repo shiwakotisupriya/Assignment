@@ -4,3 +4,14 @@ body{
 	word-spacing: 6px;
 	color: white;
 }
+h1,
+h2{
+	color: pink;
+	font-size: 35px;
+}
+
+p{
+	color: green;
+	font-size: 25px;
+}
+
