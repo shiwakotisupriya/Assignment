@@ -1,15 +1,49 @@
-body{
+html{
 	background-color: grey;
-	font-size: 35px;
+}
+body{
+	font-size: 15px;
 	word-spacing: 6px;
 }
-header{
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f20738;
+	/*margin: 2px 2px;
+	padding: 2px;*/
+}
+.box{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	z-index: 1;
+	transition: 0.5s;
+}
+.box li{
+	list-style-type: none;
+}
+.box li a{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 2px 8px;
+	font-size: 30px;
+	line-height: 1;
+	transition: 0.3s;
+}
+.box li a:hover{
+	background-color: grey;
+}
+h1{
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	color: white;
 }
 #grid-container {
 	display: grid;
+	font-size: 30px;
 	grid-template-columns: auto auto auto;
 	text-shadow:0 0 5px black;
 	transform: skew(5deg,5deg);
@@ -17,14 +51,37 @@ header{
 
 #grid-container > div{
 	background-color: lightgray;
-	padding: 100px;
+	padding: 80px;
 	margin: 30px;
 }
+
 #item3 {
 	grid-column: 1/span 2;
 }
 @media screen and (max-width: 300px){
-	body{
+	html{
 		background-color: green;
 	}
+	h1{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+#grid-container {
+	display: grid;
+	font-size: 30px;
+	grid-template-columns: 200 200 200;
+	text-shadow:0 0 5px black;
+	transform: skew(5deg,5deg);
+}
+
+#grid-container > div{
+	background-color: lightgray;
+	padding: 50px;
+	margin: 20px;
+}
+
+#item3 {
+	grid-column: 1/span 2;
+}
 }
