@@ -1,10 +1,41 @@
-body{
-	background-image: url("hi.jpg");
+html{
+	background-image: url("prtfloimg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	font-size: 30px;
 	word-spacing: 6px;
+}
+body{
+    font-size: 20px;
+}
+nav{
+	display: flex;
+	/*justify-content: 60px;*/
+	align-items: center;
+	background-color: #f20728;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	z-index: 1;
+	transition: 0.5s;
+}
+.box li{
+	list-style-type: none;
+}
+.box li a{
+	color: whitesmoke;
+	text-decoration: none;
+	display: block;
+	padding: 40px 25px;
+	font-size: 30px;
+	line-height: 1;
+	transition: 0.3s;
+}
+.box li a:hover{
+	background-color: skyblue;
 }
 #grid-container {
 	display: grid;
@@ -13,7 +44,6 @@ body{
 	background-color: #544c4a;
 	padding: 10px;
 	margin: 80px;
-	
 	position: relative;
 }
 #grid-container > div{
@@ -33,8 +63,101 @@ h1{
 	text-shadow:0 0 15px green,0 0 20px forestgreen;
 	transform: skew(25deg,20deg);
 }
-@media screen and (max-width: 300px){
-	body{
+
+.hamburger,
+.hamburgericn1,
+.hamburgericn,
+.hamburgericn2{
+	width: 20px;
+	margin-top: -1px;
+	margin: 1px;
+	height: 3px;
+	background: black;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 2;
+	transition: 0.3s;
+}
+.toogle{
+	z-index: 3;
+	cursor: pointer;
+}
+.hamburger,
+.toogle{
+	display: none;
+}
+input{
+    /*opacity:0;*/
+    margin-right: -20px;
+}
+input:checked ~ .hamburger{
+	background: transparent;
+}
+input:checked ~ .hamburger{
+	top: 0;
+	transform: rotate(-45deg);	
+	
+}
+input:checked ~ .box{
+	left: 0;
+}
+@media screen and (max-width: 400px){
+	.hamburger,
+		 .toggle {
+           display: block;		
+		}
+	html{
 		background-color: pink;
+		background-image: none;
 	}
+	nav{
+			padding: 3px 5px;
+		}
+	    .box{
+		    justify-content: left;
+		    flex-direction: column;
+		    position: fixed;
+		    top: 5px;
+		    left: -180px;
+		    width: 110px;
+		    height: 27%;
+		    margin: 29px;
+		    background-color: #fa6a88;
+	}
+	    .box li{
+		    width: 100%
+	}
+	    .box li a{
+	    	font-size: 25px;
+	    	padding: 5px;
+	    	color: green;
+	    	font-display: block;
+	    }
+	    .box li a:hover{
+	    	padding: 5px;
+		    box-shadow: blue;
+	}
+	#grid-container {
+	   display: grid;
+	   grid-template-columns: 85px 85px;
+	   grid-gap: 2px;
+	   padding: 10px;
+	   margin: 48px;
+	   position: relative;
+}
+    #grid-container div{
+	   background-color: #d9dddc;
+	   text-align: center;
+	   padding: 20px;
+	
+}
+    img{
+	   width: 30px;
+	   height: 30px;
+}
+    h1{
+	   text-align: center;
+	   font-color: red;
+	   text-shadow:0 0 15px green,0 0 20px forestgreen;
+	   transform: skew(25deg,20deg);
 }
