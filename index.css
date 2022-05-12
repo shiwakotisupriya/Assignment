@@ -46,7 +46,6 @@ nav{
 }
 .box li a:hover{
 	padding: 15px 10px;
-	box-shadow:1px yellow;
 }
 .hamburger,
 .hamburgericn1,
@@ -128,11 +127,9 @@ p{
 	    	font-size: 25px;
 	    	padding: 5px;
 	    	color: green;
-	    	font-display: block;
 	    }
 	    .box li a:hover{
-	    	padding: 5px;
-		    box-shadow: blue;
+	    	padding: 5px 6px;
 	}
 	h1{
 	    color: maroon;
