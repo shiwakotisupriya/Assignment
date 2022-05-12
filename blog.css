@@ -7,11 +7,9 @@ body{
 }
 nav{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	background-color: #f20738;
-	/*margin: 2px 2px;
-	padding: 2px;*/
+	margin: 2px 2px;
 }
 .box{
 	display: flex;
@@ -58,9 +56,72 @@ h1{
 #item3 {
 	grid-column: 1/span 2;
 }
-@media screen and (max-width: 300px){
+.hamburger,
+.hamburgericn1,
+.hamburgericn,
+.hamburgericn2{
+	width: 15px;
+	height: 3px;
+	background: black;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 1px;
+} 	
+.toogle{
+	z-index: 3;
+	cursor: pointer;
+}
+.hamburger,
+.toogle{
+	display: none;
+}
+input{
+	opacity: 0;
+	margin-right: -20px;
+}
+input:checked ~ .hamburger{
+	background: transparent;
+}
+input:checked ~ .hamburger{
+	top: 0;
+	transform: rotate(45deg);	
+	
+}
+input:checked ~ .box{
+	left: 0;
+	background-color: black;
+	width: 110px;
+}
+@media screen and (max-width: 400px){
+	.hamburger,
+		 .toggle {
+           display: block;		
+		}
 	html{
 		background-color: green;
+	}
+	nav{
+			padding: 5px 10px;
+		}
+	    .box{
+		    justify-content: left;
+		    flex-direction: column;
+		    position: fixed;
+		    top: 20px;
+		    left: -400px;
+		    width: 300px;
+		    height: 20%;
+	}
+	    .box li{
+		    width: 100%
+	}
+	    .box li a{
+	    	font-size: 25px;
+	    	padding: 5px;
+	    	color: green;
+	    }
+	    .box li a:hover{
+	    padding: 5px;
 	}
 	h1{
 	text-align: center;
@@ -70,7 +131,7 @@ h1{
 #grid-container {
 	display: grid;
 	font-size: 30px;
-	grid-template-columns: 200 200 200;
+	grid-template-columns: 250px 280px 200px;
 	text-shadow:0 0 5px black;
 	transform: skew(5deg,5deg);
 }
