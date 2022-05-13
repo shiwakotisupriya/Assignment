@@ -5,7 +5,7 @@ body{
 }
 nav{
 	display: flex;
-	background-color: #f20738;
+	background-color: #fbaed2;
 }
 .box{
 	display: flex;
@@ -24,7 +24,8 @@ nav{
 }
 h1,
 h2,
-h3{
+h3,
+h4{
 	color: pink;
 	font-size: 35px;
 }
@@ -35,6 +36,10 @@ li{
 p{
 color: green;
 	font-size: 25px;		
+}
+img{
+	height: 500px;
+	width: 700px;
 }
 .hamburger,
 .hamburgericn1,
@@ -105,7 +110,8 @@ input:checked ~ .box{
 	}
 	h1,
     h2,
-    h3{
+    h3,
+    h4{
 	    color: pink;
 	    font-size: 40px;
     }
@@ -114,4 +120,9 @@ input:checked ~ .box{
 	    color: green;
 	    font-size: 15px;
     }
+    img{
+    	height: 50px;
+    	width: 200px;
+    }
+
 }
