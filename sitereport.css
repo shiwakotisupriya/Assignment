@@ -25,7 +25,8 @@ nav{
 h1,
 h2,
 h3,
-h4{
+h4,
+h5{
 	color: pink;
 	font-size: 35px;
 }
@@ -111,7 +112,8 @@ input:checked ~ .box{
 	h1,
     h2,
     h3,
-    h4{
+    h4,
+    h5{
 	    color: pink;
 	    font-size: 40px;
     }
