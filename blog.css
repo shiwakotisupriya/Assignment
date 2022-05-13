@@ -1,5 +1,5 @@
 html{
-	background-color: grey;
+	background-color: #fb607f;
 }
 body{
 	font-size: 15px;
@@ -8,7 +8,7 @@ body{
 nav{
 	display: flex;
 	align-items: center;
-	background-color: #f20738;
+	background-color: #000dbd;
 	margin: 2px 2px;
 }
 .box{
@@ -32,7 +32,7 @@ nav{
 	transition: 0.3s;
 }
 .box li a:hover{
-	background-color: grey;
+	background-color: #ffa5c9;
 }
 h1{
 	text-align: center;
@@ -42,13 +42,12 @@ h1{
 #grid-container {
 	display: grid;
 	font-size: 30px;
-	grid-template-columns: auto auto auto;
-	text-shadow:0 0 5px black;
+	grid-template-columns: auto auto 200px;
 	transform: skew(5deg,5deg);
 }
 
 #grid-container > div{
-	background-color: lightgray;
+	background-color: #89cfef;
 	padding: 80px;
 	margin: 30px;
 }
@@ -98,7 +97,7 @@ input:checked ~ .box{
            display: block;		
 		}
 	html{
-		background-color: green;
+		background-color: #fca3b7;
 	}
 	nav{
 			padding: 5px 10px;
@@ -132,12 +131,11 @@ input:checked ~ .box{
 	display: grid;
 	font-size: 30px;
 	grid-template-columns: 250px 280px 200px;
-	text-shadow:0 0 5px black;
 	transform: skew(5deg,5deg);
 }
 
 #grid-container > div{
-	background-color: lightgray;
+	background-color: #89cfef;
 	padding: 50px;
 	margin: 20px;
 }
